@@ -1,0 +1,56 @@
+@import '~bootstrap/scss/bootstrap';
+
+p{
+  margin: 0;
+}
+
+body{
+  overflow: hidden;
+}
+
+h1{
+  color: red;
+  text-align: center;
+}
+
+h2, h3, h4{
+  text-align: center;
+}
+
+.tab-contain{
+  height: 85vh;  
+}
+
+.tab-item{
+  height: 90%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.alertContain{
+  height: 100vh;
+  padding: 20%;
+  background-color: rgba(199, 199, 199, 0.333);
+}
+
+.ChatContainer{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.messageAll label{
+  color: black;
+}
+
+.messageAll:nth-child(3n+1){
+  color: red;
+}
+
+.messageAll:nth-child(3n+2){
+  color: green;
+}
+
+.messageAll:nth-child(3n+3){
+  color: darkorange;
+}
