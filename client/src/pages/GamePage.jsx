@@ -630,7 +630,7 @@ class GamePage extends Component {
 
                 <button
                     className={this.state.isReady ? "bg-success text-white" : ""}
-                    onClick={() => this.handleReady()}
+                    // onClick={() => this.handleReady()}
                 >Sẵn sàng</button>
 
                 <PlayArea
