@@ -621,7 +621,7 @@ class GamePage extends Component {
                     messages={this.state.messages}
                     onMicClick={() => { this.handleMicClick() }}
                 ></ChatRoom>
-                <button onClick={() => onSoundClick()}><i className={isPlaying ? "bi bi-volume-up" : "bi bi-volume-mute"}></i></button>
+                {/* <button onClick={() => onSoundClick()}><i className={isPlaying ? "bi bi-volume-up" : "bi bi-volume-mute"}></i></button> */}
                 <button onClick={() => this.handleLogout()}>Logout</button>
                 <BackCard
                     renderCard={(card) => this.renderCard(card)}
@@ -630,7 +630,7 @@ class GamePage extends Component {
 
                 <button
                     className={this.state.isReady ? "bg-success text-white" : ""}
-                    // onClick={() => this.handleReady()}
+                    onClick={() => this.handleReady()}
                 >Sẵn sàng</button>
 
                 <PlayArea
@@ -669,7 +669,7 @@ class GamePage extends Component {
                 </Fade>
 
                 
-                <audio
+                {/* <audio
                     ref={this.audioRefShuffle}
                     src="./assets/sound/shuffle_card.mp3"
                 />
@@ -680,13 +680,13 @@ class GamePage extends Component {
                 <audio
                     ref={this.audioRefChat}
                     src="./assets/sound/chat.mp3"
-                />
+                /> */}
 
                 {this.state.peerConnected && (
                     <audio ref={this.remoteAudioRef} autoPlay playsInline />
                 )}
 
-                <ToastContainer
+                {/* <ToastContainer
                     position="top-left"
                     autoClose={2500}
                     hideProgressBar={false}
@@ -697,7 +697,7 @@ class GamePage extends Component {
                     draggable
                     pauseOnHover
                     theme="light"
-                />
+                /> */}
             </div>
         </Fade>)
     };

@@ -18,9 +18,9 @@ class ChatRoom extends Component {
           )))}
         </div>
         <div className='inputChatForm'>
-        <button
+        {/* <button
           onClick={onMicClick}
-        ><i class={onMic?"bi bi-mic":"bi bi-mic-mute"}></i></button>
+        ><i class={onMic?"bi bi-mic":"bi bi-mic-mute"}></i></button> */}
           <input
             type="text"
             onChange={onChangeMessage()}

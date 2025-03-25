@@ -28,7 +28,7 @@ class HomePage extends Component {
                     pauseOnHover
                     theme="light"
                 />
-                <button onClick={()=>onSoundClick()}><i className={isPlaying?"bi bi-volume-up":"bi bi-volume-mute"}></i></button>
+                {/* <button onClick={()=>onSoundClick()}><i className={isPlaying?"bi bi-volume-up":"bi bi-volume-mute"}></i></button> */}
                 <form className="home_page" style={{ display: visible ? '' : 'none' }} onSubmit={onLogin}>
                     <h1>TIẾN LÊN MIỀN NÚI</h1>
                     <div className="form_home">

@@ -23,11 +23,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const audio = this.audioRefBackground.current;
-    audio.loop = this.props.loop || true;
-    audio.play().catch((error) => {
-      console.error("Audio playback failed:", error);
-    });
+    // const audio = this.audioRefBackground.current;
+    // audio.loop = this.props.loop || true;
+    // audio.play().catch((error) => {
+    //   console.error("Audio playback failed:", error);
+    // });
 
     window.api.connectTCP();
 
@@ -36,7 +36,7 @@ class App extends Component {
 
 
       if (data.type == 'FULL') {
-        toast.error(data.message)
+        // toast.error(data.message)
         this.setState({ isLoading: false })
         return;
       }
@@ -58,7 +58,7 @@ class App extends Component {
       }      
 
       if(data.type == 'STOPROOM'){
-        toast.error("Sorry ! This room had been stopped");
+        // toast.error("Sorry ! This room had been stopped");
         return;
       }
 
@@ -103,7 +103,7 @@ class App extends Component {
   }
 
   handleLogout = () => {
-    toast.success("Hẹn lặp lại !")
+    // toast.success("Hẹn lặp lại !")
 
     const mess = {
       roomId: this.state.roomId,
@@ -177,10 +177,10 @@ class App extends Component {
 
   render() {
     return (<>
-      <audio
+      {/* <audio
         ref={this.audioRefBackground}
         src="./assets/sound/background.mp3"
-      />
+      /> */}
       {this.state.isLoading ? this.renderLoading() : this.state.isLogin ? this.renderGamePage() : this.renderHomePage()}
     </>)
   }
